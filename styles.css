@@ -1,0 +1,140 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Monument:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://wallpapercave.com/wp/wp3457127.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Monument', sans-serif;
+}
+
+.register-container, .login-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.logo {
+    margin-bottom: 1rem;
+}
+
+.register-title, .login-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d32f2f;
+}
+
+.input-group {
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.875rem;
+}
+
+.register-button, .login-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover, .login-button:hover {
+    background-color: #b71c1c;
+}
+
+.login-link, .register-link {
+    color: #d32f2f;
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.login-link:hover, .register-link:hover {
+    text-decoration: underline;
+}
+
+.notification {
+    display: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.notification.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+@media (max-width: 768px) {
+    .register-container, .login-container {
+        padding: 1rem;
+    }
+    .register-title, .login-title {
+        font-size: 1.25rem;
+    }
+    .register-button, .login-button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+#progreso .section-content p {
+    color: rgb(85, 85, 85); /* Cambia 'red' por el color que desees */
+}
+.progress-bar {
+    margin-bottom: 1rem;
+}
+
+.progress {
+    background-color: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px; /* Altura de la barra */
+}
+
+.progress-fill {
+    background-color: #2980b9; /* Color de la parte llena de la barra */
+    height: 100%;
+    transition: width 0.5s ease; /* Animación para el cambio de ancho */
+}
+
+.progress-text {
+    color: #34495e; /* Color más oscuro para el texto */
+    margin-bottom: 0.5rem; /* Espacio entre el texto y la barra de progreso */
+    display: block; /* Asegura que el texto esté en una nueva línea */
+}
